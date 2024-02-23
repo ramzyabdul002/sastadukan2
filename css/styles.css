@@ -1,0 +1,276 @@
+/* UNIVERSAL STYLING */
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Oswald;
+}
+
+body{
+  display: grid;
+  justify-content: center;
+}
+
+h1,h2{
+  text-align: center;
+  margin: 20px auto;
+}
+
+
+/* TOP BAR */
+
+.top-bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  width: 150px;
+  border-radius: 50%;
+}
+
+.top-bar .fa-solid{
+  font-size: 40px;
+  color: #ff841f;
+}
+
+input{
+  width: 500px;
+  height: 50px;
+  border-radius: 25px;
+  border: 2px solid #ff841f;
+  padding-left: 30px;
+  font-size: 15px;
+  margin-right: 30px;
+}
+
+/* STREAMING APPS CONTAINER STYLING */
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(4 , 1fr);
+  gap: 40px;
+
+  justify-content: space-evenly;
+
+  padding: 1em 1em;
+  margin: auto;
+  max-width: 80rem;
+  min-height: 300px;
+}
+
+/* MINI-CONT STYLING */
+
+.mini-cont{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+
+  width: 15em;
+  height: 19em;
+  
+  background-color: #fff;
+  box-shadow: 5px 5px 25px #0000005f;
+  border-radius: 10px;
+  background: rgb(246, 246, 246);
+}
+
+.container img{
+  width: 240px;
+  border-radius: 10px 10px 0 0;
+}
+
+
+/* CONTACT STYLING */
+
+.contact{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+
+  justify-items: center;
+  align-items: center;
+    
+  background: #ff841f;
+  box-shadow: 5px 5px 25px #0000005f;
+  border-radius: 50px;
+  height: 80px;
+  padding: 15px;
+}
+
+.social i{
+  font-size: 25px;
+  color: #000;
+}
+
+
+.contact > div {
+  display: grid;
+  justify-items: center;
+
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+/* HOVER EFFECTS FOR THE ICON */
+
+.fa-facebook:hover {
+  color: #1877f2;
+}
+
+.fa-youtube:hover {
+  color: #FF0000;
+}
+
+.fa-twitter:hover {
+  color: skyblue;
+}
+
+.fa-tiktok:hover {
+  color: #000;
+}
+
+.fa-whatsapp:hover {
+  color: #25d366;
+}
+
+.fa-instagram:hover {
+  background: -webkit-linear-gradient(45deg, #405de6,
+      #5851db, #833ab4, #c13584, #e1306c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+h6{
+  font-size: 20px;
+  margin: 30px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+@media(max-width:810px) {
+
+  .container {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+
+  @media(max-width:450px) {
+
+    .container {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+      width: 100%;
+      height: auto;
+      /* min-height: 100%; */
+      justify-items: center;
+      align-items: baseline;
+    }
+
+    .mini-cont {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+    
+      width: 100%;
+      height: auto;
+    
+      background-color: #fff;
+      box-shadow: 5px 5px 25px #0000005f;
+      border-radius: 10px;
+      background: rgb(246, 246, 246);
+      }
+
+      .top-bar{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+        justify-items: center;
+        margin: 0 auto;
+        width: 15em;
+        height: 8em;
+      }
+
+      .logo{
+        width: 85px;
+        grid-column: 1 /2;
+      }
+
+      .top-bar .fa-solid{
+        font-size: 25px;
+        grid-column: -1 / 2;
+      
+      }
+      
+      input{
+        grid-column: 1/-1;
+        grid-row: 2 / 3;
+        width: 250px;
+        height: 30px;
+        border-radius: 15px;
+        font-size: 12px;
+        margin: 0;
+      }
+
+      .container img{
+        width: 139px;
+      }
+
+      h2{
+        text-align: center;
+        margin-top: 40px;
+        padding: 0 5px;
+      }
+
+    h1 {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+
+    h5 {
+      display: none;
+    }
+
+    .contact{
+      background: none;
+    }
+
+  }
+
+}
+
+
+
+/* .logo {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.top-bar .fa-solid {
+  font-size: 40px;
+  color: #ff841f;
+}
+
+input {
+  width: 500px;
+  height: 50px;
+  border-radius: 25px;
+  border: 2px solid #ff841f;
+  padding-left: 30px;
+  font-size: 15px;
+  margin-right: 30px;
+} */

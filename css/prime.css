@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Oswald;
+}
+
+body {
+  display: grid;
+  justify-content: center;
+}
+
+.end-text {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  align-content: center;
+}
+
+.end-text i {
+  color: black;
+  font-size: 30px;
+  margin: 20px 80px;
+}
+
+h5 {
+  text-align: center;
+  font-size: 25px;
+}
+
+.text-style {
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  margin: 10px auto;
+}
+
+h2 {
+  text-align: center;
+  margin: 10px auto;
+  font-weight: 300;
+}
+/* STREAMING APPS CONTAINER STYLING */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 40px;
+
+  justify-content: space-evenly;
+
+  padding: 1em 1em;
+  margin: auto;
+  max-width: 80rem;
+  min-height: 300px;
+}
+
+/* MINI-CONT STYLING */
+
+.mini-cont {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+
+  justify-items: center;
+
+  width: 15em;
+  height: 19em;
+
+  background-color: #fff;
+  box-shadow: 5px 5px 25px #0000005f;
+  border-radius: 10px;
+  background: rgb(246, 246, 246);
+}
+
+.container img {
+  width: 60%;
+  padding: 10px 0;
+}
+
+
+h6 {
+  margin: 30px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+@media(max-width:810px) {
+
+  .container {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+
+  @media(max-width:450px) {
+
+    .container {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      width: 100%;
+      height: auto;
+      /* min-height: 100%; */
+      justify-items: center;
+      align-items: baseline;
+    }
+
+    .mini-cont {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+
+      width: 100%;
+      height: auto;
+
+      background-color: #fff;
+      box-shadow: 5px 5px 25px #0000005f;
+      border-radius: 10px;
+      background: rgb(246, 246, 246);
+    }
+
+    .container img {
+      width: 139px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 40px;
+      padding: 0 5px;
+      font-size: 20px;
+    }
+
+    h1 {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+
+    h5 {
+      display: none;
+    }
+
+    .contact {
+      background: none;
+    }
+
+  }
+
+}
